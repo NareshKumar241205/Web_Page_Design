@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbeque Nation</title>
+  <link rel="icon" href="Images/logo.png">
+  <link rel="stylesheet" href="style/restaurants.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="logo">
+      <a href="#"><img src="Images/logo.png" alt="Foodiezzz" class="logo-img"></a>
+      <span class="logo-text">Foodiezzz</span>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-menu">
+      <li>
+        <a href="#home">
+           <i class="fa-solid fa-cart-shopping" id="cartBtn"></i>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn"><img src="Images/person-circle.svg" alt="Profile"></a>
+        <div class="dropdown-content">
+          <a href="Login.html">Login</a>
+          <a href="Signup.html">Sign up</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>Barbeque Nation</h1>
+        <span class="status">Open now - 11am - 10pm (Today)</span><br>
+        <img src="Images/hotel4.jpg" class="menu-image">
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125365.83803587143!2d76.84488013550119!3d10.911721147808125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8590b87c523b1%3A0x710d649e1fb1590a!2sBarbeque%20Nation%20-%20Town%20Hall%2C%20Coimbatore!5e0!3m2!1sen!2sin!4v1717274013045!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </header>
+  </div>
+
+  <h2 class="menu-heading">MENU</h2>
+
+  <div class="hotel-grid">
+    
+
+    <div class="hotel">
+      <img src="Images/food5.jpg" class="hotel-image" alt="Grill">
+      <div class="description">
+        <span class="hotel-name">Grill</span>
+        <div class="rating">
+          <img src="Images/star.png" class="rating-img">
+          <span>4.2 &#9679; 20-25 min</span>
+        </div>
+        <div class="price" data-price="200">Price: Rs 200</div>
+      </div>
+      <button class="add-button" data-price="200">Add</button>
+    </div>
+
+    <div class="hotel">
+      <img src="Images/food3.jpg" class="hotel-image" alt="Pizza">
+      <div class="description">
+        <span class="hotel-name">Pizza</span>
+        <div class="rating">
+          <img src="Images/star.png" class="rating-img">
+          <span>4.4 &#9679; 30-50 min</span>
+        </div>
+        <div class="price" data-price="250">Price: Rs 250</div>
+      </div>
+      <button class="add-button" data-price="250">Add</button>
+    </div>
+
+    <div class="hotel">
+        <img src="Images/food1.jpg" class="hotel-image" alt="Chicken 65">
+        <div class="description">
+          <span class="hotel-name">Chicken65</span>
+          <div class="rating">
+            <img src="Images/star.png" class="rating-img">
+            <span>4.1 &#9679; 20-30 min</span>
+          </div>
+          <div class="price" data-price="150">Price: Rs 150</div>
+        </div>
+        <button class="add-button" data-price="150">Add</button>
+      </div>
+    
+
+    <div class="hotel">
+      <img src="Images/food4.jpg" class="hotel-image" alt="Biryani">
+      <div class="description">
+        <span class="hotel-name">Biryani</span>
+        <div class="rating">
+          <img src="Images/star.png" class="rating-img">
+          <span>4.6 &#9679; 10-20 min</span>
+        </div>
+        <div class="price" data-price="300">Price: Rs 300</div>
+      </div>
+      <button class="add-button" data-price="300">Add</button>
+    </div>
+  </div>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div id="cartTotal">Total: Rs 0</div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="Images/logo.png" alt="Foodiezzz" class="footer-logo">
+      </div>
+      <div class="footer-section">
+        <h3>ABOUT FOODIEZZZ</h3>
+        <ul>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>FOR RESTAURANTS</h3>
+        <ul>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Apps For You</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>SOCIAL LINKS</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <h2>Thanks For Visiting Our Page</h2>
+    </div>
+  </footer>
+
+  <script src="scripts/restaurent.js"></script>
+</body>
+
+</html>

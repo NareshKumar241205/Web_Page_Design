@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodizzz</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="style/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="body">
+    <header id="home">
+        <div class="welcome-div">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="#home"><img src="Images/logo.png" alt="Foodiezzz" class="logo-img"></a>
+                    <span class="logo-text">Foodiezzz</span>
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn"><img src="Images/person-circle.svg" alt="Profile"></a>
+                        <div class="dropdown-content">
+                            <a href="Login.html">Login</a>
+                            <a href="Signup.html">Sign up</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>Foodiezzz</h1>
+            </div>
+            <div class="welcome">
+                <p>Discover the best food and drinks in <b>Coimbatore</b></p>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="hotel-heading" id="order">Discover <span style="color: red;">Coimbatore's</span> Top-Rated Restaurants</h1>
+
+    <div class="hotel-grid">
+        <div class="hotel" onclick="redirect(1)">
+            <img src="Images/hotel1.avif" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Hari Bhavanam</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.3 &#9679 23-25 min</span>
+                </div>
+                <span>South Indian, Chettinad, Chinese</span><br>
+                <span><b>Peelamedu</b></span>
+            </div>
+        </div>
+
+        <div class="hotel" onclick="redirect(2)">
+            <img src="Images/hotel2.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">SS Hyderabad Biriyani</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.7 &#9679 20-30 min</span>
+                </div>
+                <span>South Indian, Chettinad, Chinese</span><br>
+                <span><b>Gandhipuram</b></span>
+            </div>
+        </div>
+
+        <div class="hotel" onclick="redirect(3)">
+            <img src="Images/hotel3.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Salem RR Biriyani</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.2 &#9679 30-40 min</span>
+                </div>
+                <span>North Indian, South Indian, Chettinad</span><br>
+                <span><b>Gandhipuram</b></span>
+            </div>
+        </div>
+
+        <div class="hotel"onclick="redirect(4)">
+            <img src="Images/hotel4.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Barbeque Nation</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.5 &#9679 25-30 min</span>
+                </div>
+                <span>South Indian, Chettinad, Chinese</span><br>
+                <span><b>Town Hall</b></span>
+            </div>
+        </div>
+        <div class="hotel"onclick="redirect(6)">
+            <img src="Images/hotel6.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Annapoorna</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.9 &#9679 25-30 min</span>
+                </div>
+                <span>South Indian Meals</span><br>
+                <span><b>Town Hall</b></span>
+            </div>
+        </div>
+
+        <div class="hotel"onclick="redirect(5)">
+            <img src="Images/hotel5.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Thalappakatti Biriyani</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.5 &#9679 20-40 min</span>
+                </div>
+                <span>South Indian, Chettinad</span><br>
+                <span><b>Gandhipuram</b></span>
+            </div>
+        </div>
+
+        <div class="hotel"onclick="redirect(7)">
+            <img src="Images/hotel7.png" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">KFC</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.3 &#9679 15-20 min</span>
+                </div>
+                <span>Burger, Fast Food, Rolls</span><br>
+                <span><b>Gandhipuram</b></span>
+            </div>
+        </div>
+
+        <div class="hotel"onclick="redirect(8)">
+            <img src="Images/hotel8.jpg" class="hotel-image">
+            <div class="description">
+                <span class="hotel-name">Popeyes</span>
+                <div class="rating">
+                    <img src="Images/rateing-icon.png" class="rating-img">
+                    <span>4.1 &#9679 20-30 min</span>
+                </div>
+                <span>South Indian, Chettinad</span><br>
+                <span><b>Gandhipuram</b></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Review Section</h1>
+
+        <div class="slides" id="reviews">
+            <div class="slide">
+                <img src="Images/slider1.jpg"/>
+                <div class="slide-content">
+                    <h4>
+                        "Foodiezzz is top-notch! The food arrives hot and fresh every time. The variety is impressive, and the delivery is always on time. Absolutely fantastic service!"
+                    </h4>
+                    <span>-Gordon Ramsay</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Images/slider2.jpg">
+                <div class="slide-content">
+                    <h4>
+                        "I love using Foodiezzz. It's so convenient, and the food options are wonderful. The service is reliable, and the delivery personnel are always courteous. Highly recommend!"
+                    </h4>
+                    <span>-Oprah Winfrey</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Images/slider3.jpg"/>
+                <div class="slide-content">
+                    <h4>
+                        "Foodiezzz is a great way to enjoy delicious meals at home. The selection is diverse, and the quality is consistently good. Perfect for those busy nights when you need a quick, tasty meal."
+                    </h4>
+                    <span>-Jamie Oliver</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Images/slider5.jpg"/>
+                <div class="slide-content">
+                    <h4>
+                        "Foodiezzz is perfect for plant-based eaters. There are so many creative and delicious vegetarian and vegan options. The food is always fresh, and the delivery is prompt. Love it!"
+                    </h4>
+                    <span>-Alicia Silverstone</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Images/slider6.jpg"/>
+                <div class="slide-content">
+                    <h4>
+                        "Foodiezzz is a hidden gem for food lovers. The range of cuisines is impressive, and the meals are always satisfying. The delivery is efficient and hassle-free. Definitely worth trying!"
+                    </h4>
+                    <span>-Anthony Bourdain</span>
+                </div>1
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="Images/logo.png" alt="Foodiezzz" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>ABOUT FOODIEZZZ</h3>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>FOR RESTAURANTS</h3>
+                <ul>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Apps For You</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>SOCIAL LINKS</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h2>Thanks For Visiting Our Page</h2>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
